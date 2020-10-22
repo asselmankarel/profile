@@ -1,0 +1,73 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Viga&display=swap");
+
+/* Components */
+@import url("components/button.css");
+@import url("components/list.css");
+@import url("components/avatar.css");
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #1e1e1e;
+}
+
+h1,
+h2,
+h3 {
+  color: whitesmoke;
+  font-size: 3.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 2px black;
+  margin: 0;
+}
+
+p {
+  color: #5e5e5e;
+}
+
+a,
+i {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1em;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: #1bde87;
+}
+
+a:hover > i {
+  color: #1bde87;
+}
+
+.banner {
+  width: 100vw;
+  height: 80px;
+  background-color: #191919;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.main-content {
+  margin-top: 5em;
+}
+
+.main-content > p {
+  font-size: 1.4em;
+}
+
+.nav-menu {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+}

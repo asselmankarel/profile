@@ -1,0 +1,40 @@
+.btn-elegant {
+  text-align: center;
+  font-size: 1.3em;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.btn-elegant-light {
+  color: #1bde87;
+  transition: all 0.3s;
+  position: relative;
+  background-color: #1bde870c;
+}
+.btn-elegant-light {
+  transition: all 0.3s;
+}
+.btn-elegant-light::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: #1bde87;
+  border-bottom-color: #1bde87;
+  transform: scale(0.1, 1);
+}
+.btn-elegant-light:hover {
+  letter-spacing: 2px;
+}
+.btn-elegant-light:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
