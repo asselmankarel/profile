@@ -1,10 +1,11 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Viga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers:wght@400;700&family=Sacramento&display=swap");
 
 /* Components */
 @import url("components/button.css");
 @import url("components/list.css");
 @import url("components/avatar.css");
+@import url("components/illustration.css");
 
 /* Utilities */
 body {
@@ -15,18 +16,92 @@ body {
 }
 
 h1,
-h2,
-h3 {
-  color: whitesmoke;
+h2 {
+  color: black;
   font-size: 3.5em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  text-shadow: 1px 2px black;
+  font-family: 'Bangers', cursive;
+  font-weight: 400;
   margin: 0;
+  position: relative;
+}
+
+h2 {
+  font-size: 2em;
+  margin-left: 0.2em;
+}
+
+h1:before {
+  content: "<h1>";
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 1.2em;
+  left: -1.6em;
+  font-size: 0.4em;
+  font-family: "Sacramento", cursive;
+  text-shadow: none;
+  transform: rotate(-15deg);
+}
+
+h1:after {
+  content: "</h1>";
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  bottom: 0.2em;
+  font-size: 0.4em;
+  font-family: "Sacramento", cursive;
+  text-shadow: none;
+  padding-left: 0.3em;
+  transform: rotate(15deg);
+}
+
+h2:before {
+  content: "<h2>";
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 1.2em;
+  left: -2.2em;
+  font-size: 0.4em;
+  font-family: "Sacramento", cursive;
+  text-shadow: none;
+  transform: rotate(-15deg);
+}
+
+h2:after {
+  content: "</h2>";
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  bottom: 0.2em;
+  font-size: 0.4em;
+  font-family: "Sacramento", cursive;
+  text-shadow: none;
+  padding-left: 0.3em;
+  transform: rotate(15deg);
 }
 
 p {
   color: #5e5e5e;
+  position: relative;
+}
+
+p:before {
+  content: "<p>";
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  font-family: "Sacramento", cursive;
+  transform: rotate(-15deg);
+  left: -1.3em;
+  top: 0.3em;
+  font-size: 0.8em;
+}
+p:after {
+  content: "</p>";
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  font-family: "Sacramento", cursive;
+  transform: rotate(15deg);
+  padding-left: 0.2em;
+  top: 0.3em;
+  font-size: 0.8em;
 }
 
 a,
@@ -38,40 +113,57 @@ i {
 }
 
 a:hover {
-  color: #1bde87;
+  color: #7EB77F;
 }
 
 a:hover > i {
-  color: #1bde87;
+  color: #7EB77F;
 }
 
 .banner {
-  width: 100vw;
-  height: 80px;
   background-color: #191919;
 }
 
 .container {
   width: 960px;
   margin: 0 auto;
-  padding-left: 0.5em;
 }
 
 .main-content {
-  margin-top: 5em;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e69410;
 }
 
+.info {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: .8em 0;
+  text-align: center;
+
+  background-color: #e69410;
+  color: whitesmoke;
+}
+}
 .main-content > p {
   font-size: 1.4em;
 }
 
 .nav-menu {
   display: flex;
-  width: 85%;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1em;
-  margin-left: 0.5em;
+  padding: 0.5em;
 }
 
 @media (max-width: 992px) {
@@ -80,14 +172,23 @@ a:hover > i {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 792px) {
   .container {
     width: 700px;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 725px) {
   .container {
     width: 560px;
+  }
+  h1 {
+    font-size: 2.4em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  .main-content > p {
+    font-size: 1em;
   }
 }

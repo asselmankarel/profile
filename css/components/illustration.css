@@ -1,0 +1,11 @@
+.illustration {
+  width: 30%;
+  margin: 1em 0;
+}
+
+@media (max-width: 725px) {
+  .illustration {
+    width: 75%;
+    margin: 3em 0;
+  }
+}

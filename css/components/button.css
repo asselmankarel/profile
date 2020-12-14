@@ -1,15 +1,16 @@
 .btn-elegant {
   text-align: center;
   font-size: 1.3em;
-  padding: 15px 10px;
+  margin: 15px 0;
+  padding: 7px 15px;
   cursor: pointer;
 }
 
 .btn-elegant-light {
-  color: #1bde87;
+  color: whitesmoke;
   transition: all 0.3s;
   position: relative;
-  background-color: #1bde870c;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .btn-elegant-light {
   transition: all 0.3s;
@@ -27,12 +28,13 @@
   border-bottom-width: 1px;
   border-top-style: solid;
   border-bottom-style: solid;
-  border-top-color: #1bde87;
-  border-bottom-color: #1bde87;
+  border-top-color: black;
+  border-bottom-color: black;
   transform: scale(0.1, 1);
 }
 .btn-elegant-light:hover {
   letter-spacing: 2px;
+  color: black;
 }
 .btn-elegant-light:hover::before {
   opacity: 1;
